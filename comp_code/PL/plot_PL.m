@@ -23,7 +23,7 @@ semilogy(performance_compare_Alg3_C5(1:iter_num), 'Color', [0.18,0.18,0.53], 'Li
 set(gca,'FontSize', 15);
 xlabel('Iterations','Interpreter', 'latex', ...
         'FontSize', 15, 'FontWeight','bold');
-ylabel('$P(T)$', 'Interpreter','latex', ...
+ylabel('$Q(T)$', 'Interpreter','latex', ...
         'FontSize', 15, 'FontWeight','bold');
 legend({'DPDA', ...
         'Algorithm 1-$\mathcal{C}_1$', ...
@@ -43,17 +43,6 @@ trans = 3000;
 
 figure;
 
-% semilogy(transmit_DFO_PDA(1:157), performance_compare_DFO_PDA(1:157), 'k', 'LineWidth',1.5); hold on;
-% semilogy(transmit_Alg1_C1(1:1266), performance_compare_Alg1_C1(1:1266), 'Color', [0.8,0.4,0.4],  'LineStyle', '-.', 'LineWidth',1.5);
-% semilogy(transmit_Alg1_C2(1:1563), performance_compare_Alg1_C2(1:1563), 'Color', [0.88,0.24,0.19],  'LineStyle', ':', 'LineWidth',1.5);
-% semilogy(transmit_Alg1_C3(1:1352), performance_compare_Alg1_C3(1:1352), 'Color', [1.0,0.65,0.0], 'LineStyle',  '--', 'LineWidth',1.5);
-% semilogy(transmit_Alg2_C2(1:782), performance_compare_Alg2_C2(1:782), 'Color', [0.5,0.0,0.5],  'LineStyle', ':', 'LineWidth',1.5);
-% semilogy(transmit_Alg2_C3(1:676), performance_compare_Alg2_C3(1:676), 'Color', [0.0,0.5,0.0], 'LineStyle',  '--', 'LineWidth',1.5);
-% semilogy(transmit_Alg3_C2(1:1563), performance_compare_Alg3_C2(1:1563), 'Color', [0.36,0.68,0.93],  'LineStyle', ':', 'LineWidth',1.5);
-% semilogy(transmit_Alg3_C3(1:1352), performance_compare_Alg3_C3(1:1352), 'Color', [0.69,0.75,0.1], 'LineStyle',  '--', 'LineWidth',1.5);
-% semilogy(transmit_Alg3_C4(1:2500), performance_compare_Alg3_C4(1:2500), 'Color', [0.5,0.09,0.09],  'LineStyle', '-.', 'LineWidth',1.5);
-% semilogy(transmit_Alg3_C5(1:trans), performance_compare_Alg3_C5(1:trans), 'Color', [0.18,0.18,0.53], 'LineStyle',  '-', 'LineWidth',1.5);
-
 semilogy(transmit_DFO_PDA(1:469), performance_compare_DFO_PDA(1:469), 'k', 'LineWidth',1.5); hold on;
 semilogy(transmit_Alg1_C1(1:trans), performance_compare_Alg1_C1(1:trans), 'Color', [0.8,0.4,0.4],  'LineStyle', '-.', 'LineWidth',1.5);
 semilogy(transmit_Alg1_C2(1:trans), performance_compare_Alg1_C2(1:trans), 'Color', [0.88,0.24,0.19],  'LineStyle', ':', 'LineWidth',1.5);
@@ -68,7 +57,7 @@ semilogy(transmit_Alg3_C5(1:trans), performance_compare_Alg3_C5(1:trans), 'Color
 set(gca,'FontSize', 15);
 xlabel('Transmitted bits','Interpreter', 'latex', ...
         'FontSize', 15, 'FontWeight','bold');
-ylabel('$P(T)$', 'Interpreter','latex', ...
+ylabel('$Q(T)$', 'Interpreter','latex', ...
         'FontSize', 15, 'FontWeight','bold');
 legend({'DPDA', ...
         'Algorithm 1-$\mathcal{C}_1$', ...
